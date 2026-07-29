@@ -1,0 +1,2 @@
+import EquationalCategories18c10TheoriesECanonicalLaneLean.GateLemmas
+import EquationalCategories18c10TheoriesECanonicalLaneLean.FinalTheorem

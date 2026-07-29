@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.EquationalCategories18c10TheoriesECanonicalLaneLean.SignaturePackage
+import HautevilleHouse.EquationalCategories18c10TheoriesECanonicalLaneLean.TermAlgebra
+import HautevilleHouse.EquationalCategories18c10TheoriesECanonicalLaneLean.EquationalTheory
+import HautevilleHouse.EquationalCategories18c10TheoriesECanonicalLaneLean.BirkhoffTheorem
+
+namespace HautevilleHouse
+namespace EquationalCategories18c10TheoriesECanonicalLaneLean
+
+def ConstrainedTheoremClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_theorem_endgame (A : AdmissibleClass) : ConstrainedTheoremClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end EquationalCategories18c10TheoriesECanonicalLaneLean
+end HautevilleHouse
